@@ -17,13 +17,16 @@ public class Cipher {
                 etext += " ";
             } 
             else if(c > 26){
-                etext += (char)(c + 71);
+                etext += (char)(c + 97 - 26);
+                j = ++j % key.length();
+                
             }
             else{
                 etext += (char)(c + 97);
+                j = ++j % key.length();
             }
             
-            j = ++j % key.length();
+            
         }
         
         return etext;
