@@ -16,7 +16,7 @@ public class Cipher {
             if(c < 0){
                 etext += " ";
             } 
-            else if(c > 25){
+            else if(c > 26){
                 etext += (char)(c + 72);
             }
             else{
