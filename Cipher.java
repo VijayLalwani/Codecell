@@ -14,7 +14,7 @@ public class Cipher {
         for(int i = 0, j = 0;i<text.length();i++){
             int c = (text.charAt(i)-97)+(key.charAt(j)-97);
             if(c < 0){
-                etext += " ";
+                etext += "";
             } 
             else if(c > 26){
                 etext += (char)(c + 97 - 26);
